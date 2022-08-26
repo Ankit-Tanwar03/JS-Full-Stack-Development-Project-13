@@ -144,11 +144,13 @@
 .page3 .cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 80px;
 }
 
 .page3 .card{
+    margin-top: 50px;
     text-align: center;
     margin-right: 15px;
     width: 200px;
@@ -240,4 +242,148 @@
     margin-right: 150px;
 }
 
+@media screen and (max-width:1500px) {
+    .page1 .navbar img{
+        margin-left: 50px;
+    }
+    .page1 .navbar button{
+        margin-right: 50px;
+    }
+
+    .page1 .bottom .col-right img{
+        margin-right: 50px;
+        width: 600px;
+    }
+    
+    .page1 .bottom .col-left{
+        margin-right: 100px;
+        margin-left: 50px;
+    }
+
+    .page2 .col-left img{
+        margin-left: 50px;
+        width: 600px;
+    }
+    
+    .page2 .col-right{
+        margin-right: 50px;
+        margin-left: 150px;
+    }
+    .page3 .card1{
+        margin-left: 50px;
+    }
+    
+    .page3 .card4{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width:1130px){
+
+    .page1 .navbar ul{
+        margin-left: 150px;
+    }
+
+    .page1 .bottom .col-right img{
+        width: 500px;
+    }
+    .page2 .col-left img{
+        width: 500px;
+    }
+
+    .page2 .col-right{
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width:950px){
+
+    .page1 .navbar ul{
+        margin-left: 100px;
+    }
+
+    .page1 .bottom .col-right img{
+        width: 500px;
+    }
+    .page2 .col-left img{
+        width: 400px;
+    }
+
+    .page1 .bottom .col-left h1{
+        font-size: 40px;
+    }
+    
+    .page1 .bottom .col-left p{
+        margin-top: 28px;
+        font-size: 20px;
+        color: #bcbfc4;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:850px){
+
+    .page1 .navbar ul{
+        margin-left: 0px;
+    }
+
+    .page1 .bottom .col-right img{
+        width: 400px;
+    }
+    .page2 .col-left img{
+        width: 300px;
+    }
+
+    .page1 .navbar ul{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:760px){
+    .page1 .bottom{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page1 .bottom .col-right img{
+        margin-right: 0px;
+    }
+
+    .page2{
+        height: 160vh;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page2 .col-left img{
+        margin-left: 0px;
+    }
+
+} 
+
+@media screen and (max-width:560px){
+
+    .page1 .bottom .col-left h1{
+        font-size: 30px;
+    }
+
+    .page1 .bottom .col-right img{
+        width: 300px;
+    }
+
+    .page3 .card1{
+        margin-left: 0px;
+    }
+    
+    .page3 .card4{
+        margin-right: 0px;
+    }
+
+}
 
